@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  margin: auto;
+  width: 450px;
+  height: 550px;
+}
+
+header {
+  display: flex;
+  height: 150px;
+  background-image: url(./img/bg.png);
+  background-size: contain;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: flex-end;
+}
+
+.caixa {
+}
+
+.conteudo {
+  background-color: #d3eaff;
+  height: 400px;
+}
