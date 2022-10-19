@@ -4,7 +4,7 @@ body {
   height: 100vh;
 }
 
-main {
+.caixa {
   margin: auto;
   width: 450px;
   height: 550px;
@@ -20,12 +20,11 @@ header {
   padding: 10px;
   box-sizing: border-box;
   align-items: flex-end;
-}
-
-.caixa {
+  border-radius: 10px 10px 0 0;
 }
 
 .conteudo {
   background-color: #d3eaff;
   height: 400px;
+  border-radius: 0 0 10px 10px;
 }
