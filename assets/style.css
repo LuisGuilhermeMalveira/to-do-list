@@ -1,6 +1,8 @@
 :root {
-  --main-color: red;
-  --secundary-collor: blue;
+  --cor1noite: #0d2836;
+  --cor2noite: #406a9b;
+  --cor3noite: #93d8ff;
+  --cor4noite: #d3eaff;
 }
 
 * {
@@ -24,7 +26,8 @@ header {
   display: flex;
   height: 150px;
   background-image: url(./img/bg.png);
-  background-size: contain;
+  background-size: cover;
+  background-position-y: 23%;
   font-size: 20px;
   color: white;
   padding: 10px;
@@ -34,7 +37,7 @@ header {
 }
 
 .conteudo {
-  background-color: #d3eaff;
+  background-color: var(--cor4noite);
   height: 100%;
   border-radius: 0 0 10px 10px;
   padding: 10px;
@@ -67,10 +70,10 @@ header {
   height: 100%;
   border: none;
   background: transparent;
-  cursor: pointer;
 }
 
 .blocoAdd button img {
+  cursor: pointer;
   height: 22px;
 }
 
@@ -85,6 +88,7 @@ header {
   font-size: 20px;
   list-style: none;
   margin-bottom: 10px;
+  color: var(--cor2noite);
 }
 
 .tarefa li {
@@ -93,6 +97,7 @@ header {
 
 .tarefa input {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .iconesTarefa {
@@ -103,4 +108,5 @@ header {
 
 .iconesTarefa img {
   height: 22px;
+  cursor: pointer;
 }
