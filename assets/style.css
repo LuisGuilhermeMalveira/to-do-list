@@ -1,7 +1,13 @@
+:root {
+  --main-color: red;
+  --secundary-collor: blue;
+}
+
 body {
   display: flex;
   width: 100vw;
   height: 100vh;
+  font-family: "Fasthand", cursive;
 }
 
 .caixa {
@@ -27,4 +33,28 @@ header {
   background-color: #d3eaff;
   height: 400px;
   border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+.tarefa {
+  height: min-content;
+  display: flex;
+  background-color: aliceblue;
+  border-radius: 25px;
+  padding: 10px 25px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.iconesTarefa {
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+}
+
+.iconesTarefa img {
+  height: 22px;
 }
