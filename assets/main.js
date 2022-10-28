@@ -18,11 +18,17 @@ function dataAtualFormatada() {
 let btnAdicionar = document.querySelector(".blocoAdd img");
 let inputTarefa = document.querySelector(".blocoAdd input");
 let formAdd = document.querySelector("#formAdd");
+let botaoAdicionarCancel = document.querySelector(".blocoAdd button");
 
 btnAdicionar.addEventListener("click", function (event) {
 	event.preventDefault();
 	validandoInput();
 	addTarefa();
+});
+
+//desabilitando botão em volta da imagem (+)
+botaoAdicionarCancel.addEventListener("click", function (event) {
+	event.preventDefault();
 });
 
 //validando para ver se o usuário digitou algo.
