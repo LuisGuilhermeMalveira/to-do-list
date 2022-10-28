@@ -3,6 +3,10 @@
   --secundary-collor: blue;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   width: 100vw;
@@ -11,9 +15,9 @@ body {
 }
 
 .caixa {
-  margin: auto;
+  margin: 20px auto;
   width: 450px;
-  height: 550px;
+  height: 500px;
 }
 
 header {
@@ -31,9 +35,43 @@ header {
 
 .conteudo {
   background-color: #d3eaff;
-  height: 400px;
+  height: 100%;
   border-radius: 0 0 10px 10px;
   padding: 10px;
+}
+
+.blocoAdd {
+  float: left;
+  width: 100%;
+  height: 70px;
+  background: white;
+  border-radius: 35px;
+  margin-bottom: 20px;
+}
+
+.blocoAdd input {
+  float: left;
+  width: 80%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  padding-left: 30px;
+}
+
+.blocoAdd button {
+  float: left;
+  width: 20%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.blocoAdd button img {
+  height: 22px;
 }
 
 .tarefa {
@@ -47,6 +85,14 @@ header {
   font-size: 20px;
   list-style: none;
   margin-bottom: 10px;
+}
+
+.tarefa li {
+  display: flex;
+}
+
+.tarefa input {
+  margin-right: 15px;
 }
 
 .iconesTarefa {
