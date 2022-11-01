@@ -42,5 +42,9 @@ function validandoInput() {
 
 //add o HTML
 function addTarefa() {
-	console.log(formAdd.tarefaAdd.value);
+	let inputValor = formAdd.tarefaAdd.value;
+	let tarefaDiv = document.createElement("div");
+	let 
+
+	console.log(tarefaDiv);
 }
