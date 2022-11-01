@@ -24,6 +24,7 @@ btnAdicionar.addEventListener("click", function (event) {
 	event.preventDefault();
 	validandoInput();
 	addTarefa();
+	formAdd.reset();
 });
 
 //desabilitando botão em volta da imagem (+)
@@ -36,15 +37,33 @@ function validandoInput() {
 	if (formAdd.tarefaAdd.value != 0) {
 		return;
 	} else {
-		console.log("mensagem de erro pq o usuário não colocou nada");
+		alert("Digite uma Tarefa");
+		return validandoInput;
 	}
 }
 
-//add o HTML
+//add a tarefa no HTML
 function addTarefa() {
+	let conteudo = document.querySelector(".conteudo");
 	let inputValor = formAdd.tarefaAdd.value;
 	let tarefaDiv = document.createElement("div");
-	let 
+	let tarefaLi = document.createElement("li");
+	let tarefaSection = document.createElement("section");
+	let tarefaCheckBox = document.createElement("input");
+	let tarefaEscrita = document.createElement("a");
 
-	console.log(tarefaDiv);
+	tarefaEscrita.textContent = inputValor;
+
+	conteudo.appendChild(tarefaDiv);
+
+	tarefaDiv.classList.add("tarefa");
+	tarefaLi.appendChild(tarefaCheckBox);
+	tarefaLi.appendChild(tarefaEscrita);
+	tarefaCheckBox.type = "checkbox";
+	tarefaDiv.appendChild(tarefaLi);
+
+	tarefaDiv.appendChild(tarefaSection);
+	tarefaSection.classList.add("iconesTarefa");
+	tarefaSection.innerHTML =
+		'<img src="./assets/img/Edit2.svg" alt="Edit" /> <img src="./assets/img/Delete2.svg" alt="Delete" />';
 }
