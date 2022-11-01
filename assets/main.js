@@ -22,22 +22,33 @@ let botaoAdicionarCancel = document.querySelector(".blocoAdd button");
 
 btnAdicionar.addEventListener("click", function (event) {
 	event.preventDefault();
-	validandoInput();
-	addTarefa();
+	if (!validandoInput()) {
+		addTarefa();
+	}
 	formAdd.reset();
+
+	let btnsRemove = document.querySelectorAll(".iconesTarefa");
+
+	if (btnsRemove.length > 0) {
+		deleteTarefas();
+		return;
+	}
+
+	function deleteTarefas() {
+		console.log(btnsRemove);
+	}
 });
 
-let btnRemove = document.querySelector(".iconesTarefa");
+//console.log(btnsRemove);
+
+// btnRemove.addEventListener("click", function (event) {
+// 	event.preventDefault;
+// 	removeTarefa();
+// 	function removeTarefa() {
+// 		btnRemove.parentElement.remove();
+// 	}
 
 //remove tarefa do HTML
-btnRemove.addEventListener("click", function (event) {
-	event.preventDefault;
-	removeTarefa();
-});
-
-function removeTarefa() {
-	btnRemove.parentElement.remove();
-}
 
 //desabilitando botão em volta da imagem (+)
 botaoAdicionarCancel.addEventListener("click", function (event) {
