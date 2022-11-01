@@ -27,6 +27,18 @@ btnAdicionar.addEventListener("click", function (event) {
 	formAdd.reset();
 });
 
+let btnRemove = document.querySelector(".iconesTarefa");
+
+//remove tarefa do HTML
+btnRemove.addEventListener("click", function (event) {
+	event.preventDefault;
+	removeTarefa();
+});
+
+function removeTarefa() {
+	btnRemove.parentElement.remove();
+}
+
 //desabilitando botão em volta da imagem (+)
 botaoAdicionarCancel.addEventListener("click", function (event) {
 	event.preventDefault();
@@ -65,5 +77,5 @@ function addTarefa() {
 	tarefaDiv.appendChild(tarefaSection);
 	tarefaSection.classList.add("iconesTarefa");
 	tarefaSection.innerHTML =
-		'<img src="./assets/img/Edit2.svg" alt="Edit" /> <img src="./assets/img/Delete2.svg" alt="Delete" />';
+		'<img src="./assets/img/Delete2.svg" alt="Delete" />';
 }

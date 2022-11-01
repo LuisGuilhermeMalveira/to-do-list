@@ -70,6 +70,9 @@ header {
   height: 100%;
   border: none;
   background: transparent;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 .blocoAdd button img {
@@ -102,11 +105,17 @@ header {
 
 .iconesTarefa {
   display: flex;
-  width: 50px;
-  justify-content: space-between;
+  width: 30px;
 }
 
 .iconesTarefa img {
   height: 22px;
   cursor: pointer;
+}
+
+@media (max-width: 470px) {
+  .caixa {
+    margin: 20px 10px;
+    min-width: 330px;
+  }
 }
