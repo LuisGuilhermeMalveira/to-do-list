@@ -13,7 +13,7 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
-  font-family: "Fasthand", cursive;
+  font-family: "Cedarville Cursive", cursive;
 }
 
 .caixa {
@@ -41,6 +41,10 @@ header {
   height: 100%;
   border-radius: 0 0 10px 10px;
   padding: 10px;
+}
+
+li input:checked + p {
+  text-decoration: line-through;
 }
 
 .blocoAdd {

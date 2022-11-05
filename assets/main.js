@@ -73,7 +73,7 @@ function addTarefa() {
 	let tarefaLi = document.createElement("li");
 	let tarefaSection = document.createElement("section");
 	let tarefaCheckBox = document.createElement("input");
-	let tarefaEscrita = document.createElement("a");
+	let tarefaEscrita = document.createElement("p");
 
 	tarefaEscrita.textContent = inputValor;
 
