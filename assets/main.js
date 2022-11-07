@@ -26,8 +26,11 @@ btnAdicionar.addEventListener("click", function (event) {
 		addTarefa();
 	}
 	formAdd.reset();
+
 	let btnsRemove = document.querySelectorAll(".iconesTarefa");
-	console.log(btnsRemove);
+	if (btnsRemove.length > 0) {
+		console.log(btnsRemove);
+	}
 });
 
 // if (btnsRemove.length > 0) {
