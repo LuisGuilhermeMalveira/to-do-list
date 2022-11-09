@@ -26,30 +26,16 @@ btnAdicionar.addEventListener("click", function (event) {
 		addTarefa();
 	}
 	formAdd.reset();
-
-	let btnsRemove = document.querySelectorAll(".iconesTarefa");
-	if (btnsRemove.length > 0) {
-		console.log(btnsRemove);
-	}
+	console.log(arrayDelete());
 });
 
-// if (btnsRemove.length > 0) {
-// 	deleteTarefas();
-// 	return;
-// }
+// Fazendo array cada vez que adiciona uma tarefa
+function arrayDelete() {
+	let btnsRemove = document.querySelectorAll(".iconesTarefa");
+	let arrayBtnDelete = Array.from(btnsRemove);
 
-// function deleteTarefas() {
-// 	console.log(btnsRemove);
-// }
-
-//console.log(btnsRemove);
-
-// btnRemove.addEventListener("click", function (event) {
-// 	event.preventDefault;
-// 	removeTarefa();
-// 	function removeTarefa() {
-// 		btnRemove.parentElement.remove();
-// 	}
+	return arrayBtnDelete;
+}
 
 //remove tarefa do HTML
 
